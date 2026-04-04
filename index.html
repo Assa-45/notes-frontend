@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleNotes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">SimpleNotes</h1>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="input-notes">
+            <div class="input-card-container">
+                <input id="title" type="text" placeholder="Judul Catatan" class="input-title">
+                <textarea id="content" placeholder="Tulis catatan baru..." class="input-body"></textarea>
+                <div class="input-footer">
+                    <button class="btn-add">SIMPAN</button>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="notes-grid"></div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>

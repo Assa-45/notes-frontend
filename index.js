@@ -1,7 +1,7 @@
-let port = 3000;
 let id = "";
+const BASE_URL = `https://be-rest-435877963894.us-central1.run.app`;
 
-const getApiBase = () => `http://localhost:${port}/api/v1/notes`;
+const getApiBase = () => `${BASE_URL}/api/v1/notes`;
 
 document.addEventListener("DOMContentLoaded", () => {
     const inputPort = prompt(`Masukkan port BE\nPort default: 3000`);
